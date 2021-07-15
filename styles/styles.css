@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../images/bg-intro-mobile.png);
+    background-color: hsl(0, 100%, 74%);
+    background-repeat: no-repeat;   
+    background-size: 375px auto;
+    padding: 30px;
+    width: 375px;
+    height: auto;
+}
+
+.content-text{
+    color: white;
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 28px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+p {
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    line-height: 25px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.promo-card {
+    background-color: hsl(248, 32%, 49%);
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    box-shadow: 0px 7px 3px hsl(0, 54%, 59%);
+    text-align: center;
+    width: auto;
+    height: auto;
+    padding: 20px 40px 20px 40px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.form-card{
+    background-color: white;
+    width: auto;
+    height: auto;
+    padding: 20px 20px 20px 20px;
+    border-radius: 15px;
+}
+
+input[type=text] {
+    width: 275px;
+    height: 40px;
+    font-size: 16px;
+    border: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: hsl(246, 35%, 83%);
+    margin-top: 7px;
+    margin-bottom: 14px;
+    padding: 5px 5px 5px 15px;
+    color: hsl(247, 14%, 65%);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.submit-button {
+    width: 275px;
+    height: 40px; 
+    margin-top: 7px;
+    margin-bottom: 7px;
+    border-radius: 5px;
+    color: white;
+    background-color: hsl(154, 59%, 51%);
+    border: none;
+    border-width: 1px;
+    box-shadow: 0px 4px hsl(154, 57%, 37%);
+}
+
+.submit-button:hover {
+    cursor: pointer;
+}
+
+.terms {
+    text-align: center;
+    font-weight: 500;
+    font-size: 12px;
+    color: hsl(246, 25%, 77%)
+}
+
+.terms-link {
+    color: hsl(0, 100%, 74%);
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.terms-link {
+    cursor: pointer;
+}
+
+.error-icon-first-name {
+    position: absolute;
+    background-image: url(../images/icon-error.svg);
+    position: absolute;
+    visibility: hidden;
+    background-repeat: none;
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+    margin-left: 240px;
+    margin-top: -44px;
+    z-index: 3;
+}
+
+.invalid-first-name {
+    visibility: hidden;
+    position: absolute;
+    color:hsl(0, 93%, 68%);
+    font-size: 8.5px;
+    font-style: italic;
+    margin: -9px 0px 20px 155px;
+    z-index: 2;
+}
+
+.error-icon-last-name {
+    
+    position: absolute;
+    background-image: url(../images/icon-error.svg);
+    position: absolute;
+    visibility: hidden;
+    background-repeat: none;
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+    margin-left: 240px;
+    margin-top: -44px;
+    z-index: 3;
+}
+
+.invalid-last-name {
+    visibility: hidden;
+    position: absolute;
+    color:hsl(0, 93%, 68%);
+    font-size: 8.5px;
+    font-style: italic;
+    margin: -9px 0px 20px 155px;
+    z-index: 2;
+}
+
+.error-icon-email {
+    
+    position: absolute;
+    background-image: url(../images/icon-error.svg);
+    position: absolute;
+    visibility: hidden;
+    background-repeat: none;
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+    margin-left: 240px;
+    margin-top: -44px;
+    z-index: 3;
+}
+
+.invalid-email {
+    visibility: hidden;
+    position: absolute;
+    color:hsl(0, 93%, 68%);
+    font-size: 8.5px;
+    font-style: italic;
+    margin: -9px 0px 20px 155px;
+    z-index: 2;
+}
+
+.error-icon-password {
+    
+    position: absolute;
+    background-image: url(../images/icon-error.svg);
+    position: absolute;
+    visibility: hidden;
+    background-repeat: none;
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+    margin-left: 240px;
+    margin-top: -44px;
+    z-index: 3;
+}
+
+.invalid-password {
+    visibility: hidden;
+    position: absolute;
+    color:hsl(0, 93%, 68%);
+    font-size: 8.5px;
+    font-style: italic;
+    margin: -9px 0px 20px 155px;
+    z-index: 2;
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        background-repeat: repeat;   
+        background-size: 375px auto;
+        width: 1440px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 50px;
+        width: 500px;
+        
+    }
+
+    .content-text{
+        color: white;
+        text-align: left;
+        margin: 20px 0px 20px 0px;
+        width: 500px;
+    }
+
+    .cards {
+        padding: 40px
+    }
+
+    .form-card{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        padding: 20px 20px 20px 20px;
+       
+    }
+
+    input[type=text] {
+        width: 600px;
+    }
+    .submit-button {
+        width: 600px;
+    }
+
+
+    .error-icon-first-name {
+        position: absolute;
+        visibility: hidden;
+        margin-left: 560px;
+        margin-top: 16px;
+    }
+
+    .invalid-first-name {
+        position: absolute;
+        visibility: hidden;
+        margin: 50px 0px 20px 470px;
+    }
+
+    .error-icon-last-name {
+        
+        position: absolute;
+        visibility: hidden;
+        margin-left: 560px;
+        margin-top: 78px;
+    }
+
+    .invalid-last-name {
+        position: absolute;
+        visibility: hidden;
+        margin: 112px 0px 20px 470px;
+    }
+
+    .error-icon-email {
+        
+        position: absolute;
+        visibility: hidden;
+        margin-left: 560px;
+        margin-top: 138px;
+    }
+
+    .invalid-email {
+        position: absolute;
+        visibility: hidden;
+        margin: 174px 0px 20px 470px;
+    }
+
+    .error-icon-password {
+        
+        position: absolute;
+        visibility: hidden;
+        margin-left: 560px;
+        margin-top: 200px;
+    }
+
+    .invalid-password {
+        position: absolute;
+        visibility: hidden;
+        margin: 236px 0px 20px 470px;
+    }
+}
